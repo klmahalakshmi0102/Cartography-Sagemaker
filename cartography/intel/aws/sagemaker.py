@@ -120,21 +120,9 @@ def get_sagemaker_studio_info(region):
 
     return studio_notebook_details
 
-# def get_caller_identity():
-#     """
-#     Fetches the AWS account owner (caller identity) information.
-#     """
-#     sts_client = boto3.client('sts')
-    
-#     try:
-#         identity = sts_client.get_caller_identity()
-#         print(f"Caller identity: {identity}")
-#         return identity
-#     except Exception as e:
-#         logging.error(f"Error fetching caller identity: {str(e)}")
-#         print(f"Error fetching caller identity: {str(e)}")
-#         return None
 
+# NOTE: The following main function is included for testing and understanding purposes only.
+# It is not required for the actual implementation of the SageMaker functionality.
 if __name__ == "__main__":
     # Fetch notebook instances
     print("### SageMaker Notebook Instances ###")
@@ -148,7 +136,4 @@ if __name__ == "__main__":
     studio_info = get_sagemaker_studio_info(region)
     print(studio_info)
 
-    # # Fetch caller identity (account owner)
-    # print("\n### AWS Caller Identity ###")
-    # caller_identity = get_caller_identity()
-    # print(caller_identity)
+    
