@@ -122,7 +122,6 @@ def get_sagemaker_studio_info(region):
 
 
 # NOTE: The following main function is included for testing and understanding purposes only.
-# It is not required for the actual implementation of the SageMaker functionality.
 if __name__ == "__main__":
     # Fetch notebook instances
     print("### SageMaker Notebook Instances ###")
